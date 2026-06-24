@@ -1,0 +1,78 @@
+{
+  "globals": {
+    "students": 500,
+    "init_skill_level": [0.0, 0.0],
+    "k_success": 1,
+    "k_fail": 0.5
+  },
+  "scenarios": [
+    {
+      "id": 1,
+      "num_tasks": 2,
+      "num_skills": 2,
+      "q_matrix": [
+        [1, 0],
+        [0, 1]
+      ],
+      "difficulty_level": [1, 1],
+      "depends": [-1, -1]  
+    },
+    {
+      "id": 2,
+      "num_tasks": 2,
+      "num_skills": 2,
+      "q_matrix": [
+        [1, 1],
+        [1, 1]
+      ],
+      "difficulty_level": [0, 1],
+      "depends": [-1, -1]
+    },
+    {
+      "id": 3,
+      "num_tasks": 4,
+      "num_skills": 2,
+      "q_matrix": [
+        [1, 0, 1, 0],
+        [0, 1, 0, 1]
+      ],
+      "difficulty_level": [0, 0, 1, 1],
+      "depends": [-1, -1, -1, -1]
+    },
+    {
+      "id": 4,
+      "num_tasks": 4,
+      "num_skills": 2,
+      "q_matrix": [
+        [1, 0, 1, 1],
+        [0, 1, 1, 1]
+      ],
+      "difficulty_level": [1, 1, 0, 1],
+      "depends": [-1, -1, -1, -1]
+    },
+    {
+      "id": 5,
+      "num_tasks": 6,
+      "num_skills": 2,
+      "q_matrix": [
+        [1, 0, 1, 1, 0, 1],
+        [0, 1, 1, 0, 1, 1]
+      ],
+      "difficulty_level": [0, 0, 0, 1, 1, 1],
+      "depends": [-1, -1, -1, -1, -1, -1]
+    },
+    {
+      "id": 6,
+      "num_tasks": 6,
+      "num_skills": 2,
+      "q_matrix": [
+        [1, 0, 1, 0, 1, 0],
+        [0, 1, 0, 1, 0, 1]
+      ],
+      "difficulty_level": [0, 0, 1, 1, 2, 2],
+      "depends": [-1, -1, -1, -1, -1, -1]
+    }
+  ]
+}
+  
+  

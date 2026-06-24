@@ -1,0 +1,96 @@
+-------------- RESULTS FOR SCENARIO 1------------------
+PLOT FOR p_op = 0
+   scenario  avg_steps_0.0  avg_steps_0.25  avg_steps_0.4
+0         1      16.816327       12.816327      10.571429
+PLOT FOR p_op = 0.3
+   scenario  avg_steps_0.0  avg_steps_0.25  avg_steps_0.4
+0         1      14.653061       12.653061      10.367347
+PLOT FOR p_op = 0.5
+   scenario  avg_steps_0.0  avg_steps_0.25  avg_steps_0.4
+0         1      14.489796       11.897959      10.979592
+OPTIMIZE TASK SELECTION METHOD
+Adjusted kappa with k- being 0.5
+Adjusted kappa with k- being 0.25
+Adjusted kappa with k- being 0.16666666666666666
+   scenario  avg_steps_0.0  avg_steps_0.25  avg_steps_0.4
+0         1      10.244898            12.0      12.183673
+-------------- RESULTS FOR SCENARIO 2------------------
+PLOT FOR p_op = 0
+   scenario  avg_steps_0.0  avg_steps_0.25  avg_steps_0.4
+0         2      11.387755        7.469388       5.265306
+PLOT FOR p_op = 0.3
+   scenario  avg_steps_0.0  avg_steps_0.25  avg_steps_0.4
+0         2      11.142857         8.22449       5.693878
+PLOT FOR p_op = 0.5
+   scenario  avg_steps_0.0  avg_steps_0.25  avg_steps_0.4
+0         2      10.387755        7.959184       5.612245
+OPTIMIZE TASK SELECTION METHOD
+Adjusted kappa with k- being 0.5
+Adjusted kappa with k- being 0.25
+Adjusted kappa with k- being 0.16666666666666666
+   scenario  avg_steps_0.0  avg_steps_0.25  avg_steps_0.4
+0         2       5.326531        7.938776       9.489796
+-------------- RESULTS FOR SCENARIO 3------------------
+PLOT FOR p_op = 0
+   scenario  avg_steps_0.0  avg_steps_0.25  avg_steps_0.4
+0         3      21.851064       17.408163      13.408163
+PLOT FOR p_op = 0.3
+   scenario  avg_steps_0.0  avg_steps_0.25  avg_steps_0.4
+0         3      21.232558       17.653061      13.530612
+PLOT FOR p_op = 0.5
+   scenario  avg_steps_0.0  avg_steps_0.25  avg_steps_0.4
+0         3       19.73913       17.530612      14.408163
+OPTIMIZE TASK SELECTION METHOD
+Adjusted kappa with k- being 0.5
+Adjusted kappa with k- being 0.25
+Adjusted kappa with k- being 0.16666666666666666
+   scenario  avg_steps_0.0  avg_steps_0.25  avg_steps_0.4
+0         3      14.693878        17.55102         18.375
+-------------- RESULTS FOR SCENARIO 4------------------
+PLOT FOR p_op = 0
+   scenario  avg_steps_0.0  avg_steps_0.25  avg_steps_0.4
+0         4      10.081633        7.367347       5.653061
+PLOT FOR p_op = 0.3
+   scenario  avg_steps_0.0  avg_steps_0.25  avg_steps_0.4
+0         4      12.938776        9.653061       8.020408
+PLOT FOR p_op = 0.5
+   scenario  avg_steps_0.0  avg_steps_0.25  avg_steps_0.4
+0         4      18.319149       13.979592       9.795918
+OPTIMIZE TASK SELECTION METHOD
+Adjusted kappa with k- being 0.5
+Adjusted kappa with k- being 0.25
+Adjusted kappa with k- being 0.16666666666666666
+   scenario  avg_steps_0.0  avg_steps_0.25  avg_steps_0.4
+0         4       5.938776       10.346939      14.857143
+-------------- RESULTS FOR SCENARIO 5------------------
+PLOT FOR p_op = 0
+   scenario  avg_steps_0.0  avg_steps_0.25  avg_steps_0.4
+0         5      12.040816        8.204082       5.571429
+PLOT FOR p_op = 0.3
+   scenario  avg_steps_0.0  avg_steps_0.25  avg_steps_0.4
+0         5      15.061224       11.612245       9.816327
+PLOT FOR p_op = 0.5
+   scenario  avg_steps_0.0  avg_steps_0.25  avg_steps_0.4
+0         5      16.608696        13.77551      10.163265
+OPTIMIZE TASK SELECTION METHOD
+Adjusted kappa with k- being 0.5
+Adjusted kappa with k- being 0.25
+Adjusted kappa with k- being 0.16666666666666666
+   scenario  avg_steps_0.0  avg_steps_0.25  avg_steps_0.4
+0         5       5.734694       13.020408      13.979592
+-------------- RESULTS FOR SCENARIO 6------------------
+PLOT FOR p_op = 0
+   scenario  avg_steps_0.0  avg_steps_0.25  avg_steps_0.4
+0         6      18.702128       12.408163       7.959184
+PLOT FOR p_op = 0.3
+   scenario  avg_steps_0.0  avg_steps_0.25  avg_steps_0.4
+0         6       16.77551       12.510204       8.081633
+PLOT FOR p_op = 0.5
+   scenario  avg_steps_0.0  avg_steps_0.25  avg_steps_0.4
+0         6      19.066667       17.530612      14.061224
+OPTIMIZE TASK SELECTION METHOD
+Adjusted kappa with k- being 0.5
+Adjusted kappa with k- being 0.25
+Adjusted kappa with k- being 0.16666666666666666
+   scenario  avg_steps_0.0  avg_steps_0.25  avg_steps_0.4
+0         6       8.122449        12.44898      15.836735
