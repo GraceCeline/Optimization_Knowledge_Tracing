@@ -3,7 +3,7 @@ import pandas as pd
 import random as rand
 
 def probability(theta, b):
-    p = 1 / (1 + np.exp(-(theta - b)))
+    p = 1 / (1 + np.exp(-2 * (theta - b)))
     return p
 
 class Elo:
