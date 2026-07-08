@@ -1,0 +1,213 @@
+=================================================
+Scenario 1 train Accuracy, 0.6344810980014447
+                        value
+skill param   class          
+0     prior   default 0.12368
+      learns  default 0.32529
+      guesses 0       0.22259
+      slips   0       0.26302
+      forgets default 0.00000
+1     prior   default 0.06357
+      learns  default 0.33042
+      guesses 1       0.22169
+      slips   1       0.25288
+      forgets default 0.00000
+Scenario 1 test Accuracy, 0.6281800391389433
+
+Kommentar:
+ - seems reasonable
+
+ 
+Scenario 2 train Accuracy, 0.6910675381263617
+                        value
+skill param   class          
+0     prior   default 0.00000
+      learns  default 0.00195
+      guesses 0       0.45104
+              1       0.17377
+      slips   0       0.02233
+              1       0.07261
+      forgets default 0.00000
+1     prior   default 0.00000
+      learns  default 0.00106
+      guesses 0       0.45205
+              1       0.17447
+      slips   0       0.01064
+              1       0.03551
+      forgets default 0.00000
+Scenario 2 test Accuracy, 0.6549295774647887
+Scenario 3 train Accuracy, 0.6483272873841193
+                        value
+skill param   class          
+0     prior   default 0.00000
+      learns  default 0.02077
+      guesses 0       0.70414
+              2       0.47851
+      slips   0       0.00047
+              2       0.00105
+      forgets default 0.00000
+1     prior   default 0.00000
+      learns  default 0.01314
+      guesses 1       0.68449
+              3       0.44640
+      slips   1       0.00400
+              3       0.00833
+      forgets default 0.00000
+Scenario 3 test Accuracy, 0.6371100164203612
+Scenario 4 train Accuracy, 0.6330503209774281
+                        value
+skill param   class          
+0     prior   default 0.00000
+      learns  default 0.01632
+      guesses 0       0.47300
+              2       0.47018
+              3       0.21710
+      slips   0       0.06460
+              2       0.05819
+              3       0.17191
+      forgets default 0.00000
+1     prior   default 0.02317
+      learns  default 0.14743
+      guesses 1       0.32951
+              2       0.33732
+              3       0.12890
+      slips   1       0.22013
+              2       0.20520
+              3       0.45811
+      forgets default 0.00000
+Scenario 4 test Accuracy, 0.6508196721311476
+Scenario 5 train Accuracy, 0.6209451341609932
+                        value
+skill param   class          
+0     prior   default 0.00000
+      learns  default 0.00084
+      guesses 0       0.68832
+              2       0.47092
+              3       0.48911
+              5       0.27651
+      slips   0       0.00100
+              2       0.00365
+              3       0.00184
+              5       0.00622
+      forgets default 0.00000
+1     prior   default 0.00000
+      learns  default 0.00041
+      guesses 1       0.71969
+              2       0.47142
+              4       0.45258
+              5       0.27704
+      slips   1       0.00005
+              2       0.00031
+              4       0.00021
+              5       0.00039
+      forgets default 0.00000
+Scenario 5 test Accuracy, 0.6243980738362761
+Scenario 6 train Accuracy, 0.6704820603125687
+                        value
+skill param   class          
+1     prior   default 0.00000
+      learns  default 0.00130
+      guesses 1       0.74868
+              3       0.49926
+              5       0.29830
+      slips   1       0.00000
+              3       0.00000
+              5       0.00000
+      forgets default 0.00000
+0     prior   default 0.00000
+      learns  default 0.00123
+      guesses 0       0.69567
+              2       0.46358
+              4       0.26981
+      slips   0       0.00036
+              2       0.00066
+              4       0.00190
+      forgets default 0.00000
+Scenario 6 test Accuracy, 0.6422182468694096
+
+=================================================
+
+Scenario 1 train Accuracy, 0.6344810980014447
+                        value
+skill param   class          
+0     prior   default 0.12368
+      learns  default 0.32529
+      guesses default 0.22259
+      slips   default 0.26302
+      forgets default 0.00000
+1     prior   default 0.06357
+      learns  default 0.33042
+      guesses default 0.22169
+      slips   default 0.25288
+      forgets default 0.00000
+Scenario 1 test Accuracy, 0.6281800391389433
+Scenario 2 train Accuracy, 0.6910675381263617
+                        value
+skill param   class          
+0     prior   default 0.01183
+      learns  default 0.23965
+      guesses default 0.16109
+      slips   default 0.48232
+      forgets default 0.00000
+1     prior   default 0.02019
+      learns  default 0.27043
+      guesses default 0.14683
+      slips   default 0.49899
+      forgets default 0.00000
+Scenario 2 test Accuracy, 0.6549295774647887
+Scenario 3 train Accuracy, 0.6402660217654171
+                        value
+skill param   class          
+0     prior   default 0.14094
+      learns  default 0.33305
+      guesses default 0.33885
+      slips   default 0.22034
+      forgets default 0.00000
+1     prior   default 0.10674
+      learns  default 0.39675
+      guesses default 0.30185
+      slips   default 0.26288
+      forgets default 0.00000
+Scenario 3 test Accuracy, 0.6091954022988506
+Scenario 4 train Accuracy, 0.6258024435700973
+                        value
+skill param   class          
+0     prior   default 0.02970
+      learns  default 0.27929
+      guesses default 0.19799
+      slips   default 0.39015
+      forgets default 0.00000
+1     prior   default 0.04277
+      learns  default 0.28896
+      guesses default 0.18872
+      slips   default 0.40655
+      forgets default 0.00000
+Scenario 4 test Accuracy, 0.6459016393442623
+Scenario 5 train Accuracy, 0.6025230276331598
+                        value
+skill param   class          
+0     prior   default 0.10324
+      learns  default 0.29883
+      guesses default 0.25990
+      slips   default 0.34636
+      forgets default 0.00000
+1     prior   default 0.07509
+      learns  default 0.33871
+      guesses default 0.24856
+      slips   default 0.35307
+      forgets default 0.00000
+Scenario 5 test Accuracy, 0.5987158908507223
+Scenario 6 train Accuracy, 0.6156724631300903
+                        value
+skill param   class          
+1     prior   default 0.11828
+      learns  default 0.26240
+      guesses default 0.28405
+      slips   default 0.26312
+      forgets default 0.00000
+0     prior   default 0.06882
+      learns  default 0.31147
+      guesses default 0.25032
+      slips   default 0.32052
+      forgets default 0.00000
+Scenario 6 test Accuracy, 0.5885509838998211

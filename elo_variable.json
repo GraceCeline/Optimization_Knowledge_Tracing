@@ -3,7 +3,7 @@
     "students": 500,
     "init_skill_level": [0.0, 0.0],
     "k_success": 1,
-    "k_fail": 0.5
+    "k_fail": 0.5  
   },
   "scenarios": [
     {
@@ -70,6 +70,30 @@
         [0, 1, 0, 1, 0, 1]
       ],
       "difficulty_level": [0, 0, 1, 1, 2, 2],
+      "depends": [-1, -1, -1, -1, -1, -1]
+    },
+    {
+      "id": 7,
+      "num_tasks": 4,
+      "num_skills": 3,
+      "q_matrix": [
+        [1, 1, 0, 1],
+        [1, 1, 1, 0],
+        [1, 0, 1, 1]
+      ],
+      "difficulty_level": [1, 1, 1, 1],
+      "depends": [-1, -1, -1, -1]
+    },
+    {
+      "id": 8,
+      "num_tasks": 6,
+      "num_skills": 3,
+      "q_matrix": [
+        [1, 1, 0, 0, 1, 1],
+        [1, 0, 1, 0, 0, 1],
+        [0, 0, 1, 1, 1, 0]
+      ],
+      "difficulty_level": [1, 0, 1, 0, 1, 1],
       "depends": [-1, -1, -1, -1, -1, -1]
     }
   ]
