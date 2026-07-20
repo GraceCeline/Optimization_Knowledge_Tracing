@@ -56,7 +56,7 @@ class TorchBKT:
     Expects a dataframe with columns: student_id, task, skill_id, success, step
     """
 
-    def __init__(self, epochs=10, fits=10, forget=False, betas=(.9, .999), seed=1):
+    def __init__(self, epochs=100, fits=10, forget=False, betas=(.9, .999), seed=1):
         self.epochs = epochs
         self.fits = fits
         self.forget = forget
@@ -126,7 +126,7 @@ class TorchBKT:
 
             bkt = BKT(n_tasks, forgetting=self.forget)
             loss_fn = nn.MSELoss()
-            optimizer = optim.Adam(bkt.parameters(), lr=.05, betas=self.betas)
+            optimizer = optim.Adam(bkt.parameters(), lr=1e-2, betas=self.betas)
 
             for epoch in range(self.epochs):
                 bkt.train()
@@ -183,10 +183,10 @@ class TorchBKT:
             self.models[skill] = best_bkt
             self.params[skill] = {
                 'prior': (0.1 * torch.sigmoid(best_bkt.L0)).item(),
-                'learn': torch.sigmoid(best_bkt.T).item(),
+                'learn': torch.clamp(torch.sigmoid(best_bkt.T), max=1).item(),
                 'forget': torch.sigmoid(best_bkt.F).item() if self.forget else 0.,
-                'guess': (0.5 * torch.sigmoid(best_bkt.G)).tolist(),  # one value per task
-                'slip': torch.sigmoid(best_bkt.S).tolist(),
+                'guess': torch.clamp(torch.sigmoid(best_bkt.G), max=1).tolist(),  # one value per task
+                'slip': torch.clamp(torch.sigmoid(best_bkt.S), max=1).tolist(),
             }
 
             if verbose:
@@ -240,27 +240,40 @@ class TorchBKT:
 
     def save(self, model_dir, scenario_id):
         os.makedirs(model_dir, exist_ok=True)
-        for skill, model in self.models.items():
-            torch.save(model.state_dict(), os.path.join(model_dir, f'BKT_model_scenario_{scenario_id}_skill_{skill}.pth'))
-        meta = {
-            'skills': self.skills,
-            'task_id_maps': self.task_id_maps,
-            'params': self.params,
-            'forget': self.forget,
-        }
-        torch.save(meta, os.path.join(model_dir, 'meta.pth'))
 
-    def load(self, model_dir):
-        meta = torch.load(os.path.join(model_dir, 'meta.pth'), weights_only=False)
-        self.skills = meta['skills']
-        self.task_id_maps = meta['task_id_maps']
-        self.params = meta['params']
-        self.forget = meta['forget']
+        state_dicts = {skill: model.state_dict() for skill, model in self.models.items()}
+
+        checkpoint = {
+            'scenario_id'  : scenario_id,
+            'skills'       : self.skills,
+            'task_id_maps' : self.task_id_maps,
+            'params'       : self.params,
+            'forget'       : self.forget,
+            'state_dicts'  : state_dicts,
+        }
+        path = os.path.join(model_dir, f'TorchBKT_scenario_{scenario_id}.pth')
+        torch.save(checkpoint, path)
+
+        print(f"[Scenario {scenario_id}] TorchBKT saved → {path}")
+        return path
+
+
+    def load(self, model_dir, scenario_id):
+        path = os.path.join(model_dir, f'TorchBKT_scenario_{scenario_id}.pth')
+        checkpoint = torch.load(path, weights_only=False)
+
+        self.skills = checkpoint['skills']
+        self.task_id_maps = checkpoint['task_id_maps']
+        self.params = checkpoint['params']
+        self.forget = checkpoint['forget']
+
         self.models = {}
         for skill in self.skills:
             n_tasks = len(self.task_id_maps[skill])
             model = BKT(n_tasks, forgetting=self.forget)
-            model.load_state_dict(torch.load(os.path.join(model_dir, f'BKT_model_scenario_{scenario_id}_skill_{skill}.pth')))
+            model.load_state_dict(checkpoint['state_dicts'][skill])
             model.eval()
             self.models[skill] = model
+
+        print(f"[Scenario {scenario_id}] TorchBKT loaded ← {path}")
         return self
